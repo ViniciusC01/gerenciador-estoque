@@ -12,8 +12,6 @@ public class Item {
     private BigDecimal preco;
     private Categoria categoria;
 
-<<<<<<< HEAD
-=======
     public Item(Produto produto, BigDecimal quantidade, BigDecimal preco, Categoria categoria) {
         this.produto = produto;
         this.quantidade = quantidade;
@@ -21,7 +19,6 @@ public class Item {
         this.categoria = categoria;
     }
 
->>>>>>> 56fa8757ffe57f054b0afd31c024901e2bba9d3a
     public Produto getProduto() {
         return produto;
     }
@@ -53,8 +50,6 @@ public class Item {
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
-<<<<<<< HEAD
-=======
 
     @Override
     public String toString() {
@@ -78,5 +73,4 @@ public class Item {
     public int hashCode() {
         return Objects.hash(produto, categoria);
     }
->>>>>>> 56fa8757ffe57f054b0afd31c024901e2bba9d3a
 }
