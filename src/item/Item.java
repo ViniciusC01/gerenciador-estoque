@@ -12,6 +12,55 @@ public class Item {
     private BigDecimal preco;
     private Categoria categoria;
 
+    public Item(Produto produto, BigDecimal quantidade, BigDecimal preco, Categoria categoria) {
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.preco = preco;
+        this.categoria = categoria;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
+
+    public BigDecimal getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(BigDecimal quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public BigDecimal getPreco() {
+        return preco;
+    }
+
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "produto=" + produto +
+                ", quantidade=" + quantidade +
+                ", preco=" + preco +
+                ", categoria=" + categoria +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -12,8 +12,8 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(long id, String nome) {
-        this.id = id;
+    public Produto(String nome, Marca marca) {
+        this.marca = marca;
         this.nome = nome;
     }
 
@@ -43,11 +43,11 @@ public class Produto {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Produto produto = (Produto) o;
-        return id == produto.id;
+        return Objects.equals(nome, produto.nome) && marca == produto.marca;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(nome, marca);
     }
 }
