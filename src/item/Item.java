@@ -9,6 +9,5 @@ public class Item {
     Produto produto;
     BigDecimal quantidade;
     private BigDecimal preco;
-
     private Categoria categoria;
 }
