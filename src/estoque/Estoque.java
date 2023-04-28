@@ -14,7 +14,9 @@ public class Estoque {
 
     public void consultarPorCategoriaPreco(){}
     public void consultarPorCategoria(){}
-    public void adicionarProduto( ){}
+    public void adicionarProduto(Produto produto){
+
+    }
     public boolean removerProduto(Produto produto){
         for (Item p:listaDeProdutos) {
 
